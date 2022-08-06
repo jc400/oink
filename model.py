@@ -12,7 +12,6 @@ data.
 import threading
 import queue
 import time
-from functools import partial
 import socket
 
 import config
@@ -27,7 +26,7 @@ class Model:
     def __init__(self):
     
         if config.USE_LOCALHOST:
-            self.ADDRESS = ('127.0.0.1', config.PORT)
+            self.ADDRESS = (self.getLoopbackIP(), config.PORT)
         else:
             self.ADDRESS = (self.getIP(), config.PORT)
         self.NICKNAME = self.setOwnNickname()
