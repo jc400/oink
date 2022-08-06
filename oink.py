@@ -66,10 +66,10 @@ class Gui:
             """Helper function"""
             return tkinter.PhotoImage(file=os.path.join(self.DIRPATH, 'images', filename))
         
-        self.images['me']['lid'] = getImg('lidme2.png')
-        self.images['me']['base'] = getImg('baseme.png')
-        self.images['th']['lid'] = getImg('lidth2.png')
-        self.images['th']['base'] = getImg('baseth.png')
+        self.images['me']['lid'] = getImg('lid_me.png')
+        self.images['me']['base'] = getImg('base_me.png')
+        self.images['th']['lid'] = getImg('lid_them.png')
+        self.images['th']['base'] = getImg('base_them.png')
         self.images['btn']['sttg'] = getImg('hamburger.png')
 
 
