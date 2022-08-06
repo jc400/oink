@@ -26,7 +26,10 @@ class Model:
 
     def __init__(self):
     
-        self.ADDRESS = (self.getIP(), config.PORT)
+        if config.USE_LOCALHOST:
+            self.ADDRESS = ('127.0.0.1', config.PORT)
+        else:
+            self.ADDRESS = (self.getIP(), config.PORT)
         self.NICKNAME = self.setOwnNickname()
         self.SCANKEY = config.SCANKEY
         self.REPLKEY = config.REPLKEY

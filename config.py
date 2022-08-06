@@ -1,5 +1,6 @@
 #Config file
 
+USE_LOCALHOST = True
 PORT = 49691    
 SCANKEY = 'h5j4kl3h6k4l3'
 REPLKEY = 'htklsaehgk135'
