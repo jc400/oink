@@ -22,4 +22,4 @@ To find other Oink clients on the network automatically, Oink sends out "scan" p
 
 If you still want to try it out, installation should be straightforward. Just clone the repo and run oink.py.
 
-Note that there is a 'USE_LOCALHOST' option in config.py--if you set that to True, Oink will run entirely within your machine without exposing any external ports.
+Note that there is a 'USE_LOCALHOST' option in config.py--if you set that to True, Oink will run entirely within your machine without exposing any external ports. That option will pick a random localhost IP, so you can start Oink multiple times to test out the messaging options.
